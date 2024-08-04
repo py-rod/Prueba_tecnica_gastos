@@ -4,7 +4,7 @@ from . import views
 
 urlpatterns = [
     path('create_type_expense', views.create_type_of_expense,
-         name='create_type_expenses'),
+         name='create_type_expense'),
     path('get_all_expenses_by_user', views.get_type_of_expenses_by_user,
          name='get_all_extenses_by_user'),
     path('get_all_extenses_by_admin', views.get_all_type_of_expenses_by_admin,
