@@ -41,11 +41,12 @@ def get_all_savings_targets_by_admin(request):
 
 @api_view(['PUT'])
 @permission_classes([IsAuthenticated])
-def upgrade_saving_target(request, id_income):
+def upgrade_saving_target(request, id_saving_target):
     try:
-        saving = SavingsTargets.objects.get(user=request.user, id=id_income)
+        saving = SavingsTargets.objects.get(
+            user=request.user, id=id_saving_target)
     except SavingsTargets.DoesNotExist:
-        return Response({'message': 'The income is not found'})
+        return Response({'message': 'The saving target is not found'})
 
     serializer = UpgradeSavingsTargetsSerializer(
         saving, data=request.data, partial=True)
@@ -57,11 +58,12 @@ def upgrade_saving_target(request, id_income):
 
 @api_view(['DELETE'])
 @permission_classes([IsAuthenticated])
-def delete_saving_target(request, id_income):
+def delete_saving_target(request, id_saving_target):
     try:
-        saving = SavingsTargets.objects.get(user=request.user, id=id_income)
+        saving = SavingsTargets.objects.get(
+            user=request.user, id=id_saving_target)
     except SavingsTargets.DoesNotExist:
-        return Response({'message': 'The income is not found '})
+        return Response({'message': 'The saving target is not found '})
     else:
         saving.delete()
-        return Response({'message': 'The income has been delete'})
+        return Response({'message': 'The saving target has been delete'})

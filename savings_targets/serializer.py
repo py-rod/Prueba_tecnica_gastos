@@ -5,7 +5,8 @@ from .models import SavingsTargets
 class CreateSavingsTargetsSerializer(serializers.ModelSerializer):
     class Meta:
         model = SavingsTargets
-        fields = ['quantity', 'description', 'init_date', 'last_date']
+        fields = ['quantity', 'description',
+                  'type_saving', 'init_date', 'last_date']
 
 
 class GetAllSavingsTargetsSerializer(serializers.ModelSerializer):

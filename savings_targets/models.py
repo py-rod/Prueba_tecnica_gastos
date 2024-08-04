@@ -14,3 +14,6 @@ class SavingsTargets(models.Model):
 
     def __str__(self) -> str:
         return f'{self.user} - {self.quantity} - {self.type_saving}'
+
+    class Meta:
+        verbose_name_plural = 'Savings Targets'

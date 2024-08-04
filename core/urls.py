@@ -26,7 +26,7 @@ urlpatterns = [
     path('savings/', include('type_of_savings.urls')),
     path('type_expenses/', include('type_of_expense.urls')),
     path('income/', include('income.urls')),
-    path('savings_targets/', include('savings_targest.urls')),
+    path('savings_targets/', include('savings_targets.urls')),
 
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
