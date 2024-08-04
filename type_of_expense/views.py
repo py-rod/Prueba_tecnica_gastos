@@ -45,7 +45,7 @@ def upgrade_type_expense(request, id_expense):
     try:
         saving = TypeOfExpense.objects.get(user=request.user, id=id_expense)
     except TypeOfExpense.DoesNotExist:
-        return Response({'message': 'The saving is not found'})
+        return Response({'message': 'The type of expense is not found'})
 
     serializer = UpgradeTypeOfExpense(saving, data=request.data)
     if serializer.is_valid():
@@ -60,7 +60,7 @@ def delete_type_expense(request, id_expense):
     try:
         saving = TypeOfExpense.objects.get(user=request.user, id=id_expense)
     except TypeOfExpense.DoesNotExist:
-        return Response({'message': 'The saving is not found '})
+        return Response({'message': 'The type of expense is not found '})
     else:
         saving.delete()
-        return Response({'message': 'The saving has been delete'})
+        return Response({'message': 'The type of expense has been delete'})
