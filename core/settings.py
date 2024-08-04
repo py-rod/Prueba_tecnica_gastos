@@ -54,6 +54,7 @@ PROJECTS_APPS = [
     'type_of_savings',
     'type_of_expense',
     'income',
+    'savings_targets',
 ]
 
 THIRD_PARTY_APPS = [
