@@ -5,7 +5,7 @@ from rest_framework import serializers
 class CreateExpensesSerializer(serializers.ModelSerializer):
     class Meta:
         model = Expenses
-        fields = ['quantity', 'description']
+        fields = ['quantity', 'description', 'type_expense']
 
 
 class GetExpenseSerializer(serializers.ModelSerializer):
@@ -17,4 +17,4 @@ class GetExpenseSerializer(serializers.ModelSerializer):
 class UpgradeExpensesSerializer(serializers.ModelSerializer):
     class Meta:
         model = Expenses
-        fields = ['quantity', 'description']
+        fields = ['quantity', 'description', 'type_expense']
