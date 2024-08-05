@@ -36,7 +36,7 @@ const LoginPage = () => {
 
     return (
         <>
-            <section className="section-1">
+            <section className="section-1-signin">
                 <form onSubmit={e => handleSubmit(e)}>
                     <input type="email" name="email" id="id_email" placeholder="Email" autoFocus value={email} onChange={(e) => setEmail(e.target.value)} />
                     <input type="password" name="password" id="id_password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />

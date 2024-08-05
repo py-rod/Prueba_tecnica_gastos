@@ -43,7 +43,7 @@ const Signup = () => {
 
     return (
         <>
-            <section className="section-1">
+            <section className="section-1-signup">
                 <form onSubmit={e => handleSubmit(e)}>
                     <input type="text" name="first_name" id="id_first_name" value={firstName} onChange={(e) => setFirstName(e.target.value)} placeholder="First name" autoFocus />
                     <input type="text" name="last_name" id="id_last_name" value={lastName} onChange={(e) => setLastName(e.target.value)} placeholder="Last name" />

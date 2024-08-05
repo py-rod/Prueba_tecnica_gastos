@@ -24,4 +24,17 @@
         font-size: 2rem;
         font-weight: 700;
     }
+
+    .btn-logout {
+        background-color: rgb(41, 41, 41);
+        padding: 10px 20px;
+        color: white;
+        font-weight: 500;
+        border: none;
+        text-decoration: none;
+    }
+
+    .btn-logout:hover {
+        background-color: rgb(61, 61, 61);
+    }
 }

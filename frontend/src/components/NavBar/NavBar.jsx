@@ -15,8 +15,10 @@ const NavBar = () => {
 
     const onSubmit = (e) => {
         logout();
+        localStorage.removeItem('access')
+        localStorage.removeItem('refresh')
         navigate('/')
-        e.location.reload(true)
+        e.window.location.reload(true)
     }
 
 
@@ -30,7 +32,7 @@ const NavBar = () => {
                     {
                         authToken
                             ?
-                            <Link onClick={(e) => onSubmit(e)}>Logout</Link>
+                            <Link onClick={onSubmit} className="btn-logout">Logout</Link>
                             :
                             null
                     }

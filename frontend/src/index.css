@@ -65,8 +65,8 @@ p {
 
 main {
     width: 100%;
-    max-width: 1500px;
+    max-width: 1200px;
     margin: 0 auto;
     flex: 1;
-    padding: 0 20px;
+    padding: 0 30px;
 }

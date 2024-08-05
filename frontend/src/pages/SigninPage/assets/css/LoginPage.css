@@ -1,49 +1,51 @@
-.section-1 {
+.section-1-signin {
     width: 550px;
     max-width: 550px;
     padding-top: 50px;
     padding-bottom: 30px;
     margin: 0 auto;
+
+    form {
+        max-width: 500px;
+        margin: 0 auto;
+
+        input {
+            width: 100%;
+            display: block;
+            margin-top: 15px;
+            padding: 7px 15px;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid rgb(182, 182, 182);
+            line-height: 1.9rem;
+            font-size: 1.1rem;
+            font-family: var(--font-3);
+            font-weight: 400;
+        }
+
+        input::placeholder {
+            font-family: var(--font-2);
+        }
+
+        input:focus {
+            border-bottom: 2px solid black;
+        }
+
+        .btn-signin {
+            display: block;
+            width: 100%;
+            margin-top: 30px;
+            padding: 15px 0;
+            background-color: rgb(44, 44, 44);
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+    }
 }
 
 
-form {
-    max-width: 500px;
-    margin: 0 auto;
 
-    input {
-        width: 100%;
-        display: block;
-        margin-top: 15px;
-        padding: 7px 15px;
-        border: none;
-        outline: none;
-        border-bottom: 1px solid rgb(182, 182, 182);
-        line-height: 1.9rem;
-        font-size: 1.1rem;
-        font-family: var(--font-3);
-        font-weight: 400;
-    }
-
-    input::placeholder {
-        font-family: var(--font-2);
-    }
-
-    input:focus {
-        border-bottom: 2px solid black;
-    }
-
-    .btn-signin {
-        display: block;
-        width: 100%;
-        margin-top: 30px;
-        padding: 15px 0;
-        background-color: rgb(44, 44, 44);
-        border: none;
-        color: white;
-        cursor: pointer;
-    }
-}
 
 .redirect-signup {
     padding: 0 24px;
